@@ -1,0 +1,1245 @@
+Trace "./trace/trace00.txt" ... Pass
+Trace "./trace/trace01.txt" ... Pass
+Trace "./trace/trace02.txt" ... Error: parseExp: Found extra token: test
+Pass
+Trace "./trace/trace03.txt" ... Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10 REM test line 1
+LIST
+QUIT
+
+Demo output:
+10 REM test line 1
+
+Your output:
+
+Trace "./trace/trace04.txt" ... Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10 REM test line 1
+LET LET = 1
+QUIT
+
+
+Demo output:
+SYNTAX ERROR
+
+Your output:
+
+Trace "./trace/trace05.txt" ... Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10 REM test line 1
+20 REM test line 2
+LIST
+QUIT
+
+Demo output:
+10 REM test line 1
+20 REM test line 2
+
+Your output:
+
+Trace "./trace/trace06.txt" ... Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10000 REM test line 1
+20000 REM test line 2
+LIST
+QUIT
+
+Demo output:
+10000 REM test line 1
+20000 REM test line 2
+
+Your output:
+
+Trace "./trace/trace07.txt" ... Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10 REM test line 1
+20 REM test line 2
+15 REM test line 3
+LIST
+QUIT
+
+Demo output:
+10 REM test line 1
+15 REM test line 3
+20 REM test line 2
+
+Your output:
+
+Trace "./trace/trace08.txt" ... Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10 REM test line 1
+20 REM test line 2
+10 REM test line 1 - modified
+LIST
+QUIT
+
+Demo output:
+10 REM test line 1 - modified
+20 REM test line 2
+
+Your output:
+
+Trace "./trace/trace09.txt" ... Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10 REM test line 1
+20 REM test line 2
+10
+LIST
+QUIT
+
+Demo output:
+20 REM test line 2
+
+Your output:
+
+Trace "./trace/trace10.txt" ... Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10 REM test line 1
+20 REM test line 2
+10
+LIST
+10 REM test line 1 - modified
+LIST
+QUIT
+
+Demo output:
+20 REM test line 2
+10 REM test line 1 - modified
+20 REM test line 2
+
+Your output:
+
+Trace "./trace/trace11.txt" ... Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10 REM test line 1
+20 REM test line 2
+30
+LIST
+QUIT
+
+Demo output:
+10 REM test line 1
+20 REM test line 2
+
+Your output:
+
+Trace "./trace/trace12.txt" ... Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10 REM test line 1
+20 REM test line 2
+30 REM test line 3
+15 REM test line 4
+25 REM test line 5
+10000 REM test line 6
+18 REM test line 7
+20
+22 REM test line 8
+19 REM test line 9
+10000 REM test line 10
+20000 REM test line 11
+10000
+20000
+LIST
+QUIT
+
+
+Demo output:
+10 REM test line 1
+15 REM test line 4
+18 REM test line 7
+19 REM test line 9
+22 REM test line 8
+25 REM test line 5
+30 REM test line 3
+
+Your output:
+
+Trace "./trace/trace13.txt" ... Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: test
+Pass
+Trace "./trace/trace14.txt" ... Pass
+Trace "./trace/trace15.txt" ... Pass
+Trace "./trace/trace16.txt" ... Pass
+Trace "./trace/trace17.txt" ... Pass
+Trace "./trace/trace18.txt" ... Pass
+Trace "./trace/trace19.txt" ... Pass
+Trace "./trace/trace20.txt" ... Pass
+Trace "./trace/trace21.txt" ... Fail
+Trace file:
+PRINT 3 / 0
+QUIT
+
+Demo output:
+DIVIDE BY ZERO
+
+Your output:
+
+Trace "./trace/trace22.txt" ... Fail
+Trace file:
+PRINT 0 / 0
+QUIT
+
+Demo output:
+DIVIDE BY ZERO
+
+Your output:
+
+Trace "./trace/trace23.txt" ... Pass
+Trace "./trace/trace24.txt" ... Pass
+Trace "./trace/trace25.txt" ... Pass
+Trace "./trace/trace26.txt" ... Pass
+Trace "./trace/trace27.txt" ... Pass
+Trace "./trace/trace28.txt" ... Pass
+Trace "./trace/trace29.txt" ... Pass
+Trace "./trace/trace30.txt" ... Pass
+Trace "./trace/trace31.txt" ... Pass
+Trace "./trace/trace32.txt" ... Pass
+Trace "./trace/trace33.txt" ... Pass
+Trace "./trace/trace34.txt" ... Pass
+Trace "./trace/trace35.txt" ... Pass
+Trace "./trace/trace36.txt" ... Pass
+Trace "./trace/trace37.txt" ... Pass
+Trace "./trace/trace38.txt" ... Pass
+Trace "./trace/trace39.txt" ... Fail
+Trace file:
+PRINT 1 / (1 - 1)
+QUIT
+
+Demo output:
+DIVIDE BY ZERO
+
+Your output:
+
+Trace "./trace/trace40.txt" ... Pass
+Trace "./trace/trace41.txt" ... Pass
+Trace "./trace/trace42.txt" ... Pass
+Trace "./trace/trace43.txt" ... Pass
+Trace "./trace/trace44.txt" ... Pass
+Trace "./trace/trace45.txt" ... Pass
+Trace "./trace/trace46.txt" ... Pass
+Trace "./trace/trace47.txt" ... Pass
+Trace "./trace/trace48.txt" ... Pass
+Trace "./trace/trace49.txt" ... Pass
+Trace "./trace/trace50.txt" ... Pass
+Trace "./trace/trace51.txt" ... Pass
+Trace "./trace/trace52.txt" ... Pass
+Trace "./trace/trace53.txt" ... Error: y is undefined
+Fail
+Trace file:
+LET x = 4
+PRINT y
+QUIT
+
+Demo output:
+VARIABLE NOT DEFINED
+
+Your output:
+
+Trace "./trace/trace54.txt" ... Error: y is undefined
+Fail
+Trace file:
+LET x = 3
+LET x = x + y
+QUIT
+
+Demo output:
+VARIABLE NOT DEFINED
+
+Your output:
+
+Trace "./trace/trace55.txt" ... Error: x is undefined
+Fail
+Trace file:
+INPUT x
+3
+PRINT x
+QUIT
+
+Demo output:
+ ? 3
+
+Your output:
+
+Trace "./trace/trace56.txt" ... Error: x is undefined
+Fail
+Trace file:
+INPUT x
+3
+INPUT y
+4
+PRINT x + y
+QUIT
+
+Demo output:
+ ?  ? 7
+
+Your output:
+
+Trace "./trace/trace57.txt" ... Error: x is undefined
+Fail
+Trace file:
+INPUT x
+10
+LET x = x + x
+PRINT x
+QUIT
+
+Demo output:
+ ? 20
+
+Your output:
+
+Trace "./trace/trace58.txt" ... Error: x is undefined
+Fail
+Trace file:
+INPUT x
+10
+INPUT y
+20
+LET t = x
+LET x = y
+LET y = t
+PRINT x
+PRINT y
+QUIT
+
+Demo output:
+ ?  ? 20
+10
+
+Your output:
+
+Trace "./trace/trace59.txt" ... Error: x is undefined
+Fail
+Trace file:
+INPUT x
+-20
+PRINT 0 - x
+QUIT
+
+Demo output:
+ ? 20
+
+Your output:
+
+Trace "./trace/trace60.txt" ... Error: x is undefined
+Fail
+Trace file:
+INPUT x
+hello
+12
+PRINT x
+QUIT
+
+Demo output:
+ ? INVALID NUMBER
+ ? 12
+
+Your output:
+
+Trace "./trace/trace61.txt" ... Error: x is undefined
+Error: Illegal term in expression
+Error: x is undefined
+Fail
+Trace file:
+INPUT x
+1 + 1
+108
+PRINT x
+QUIT
+
+Demo output:
+ ? INVALID NUMBER
+ ? 108
+
+Your output:
+
+Trace "./trace/trace62.txt" ... Error: x is undefined
+Fail
+Trace file:
+INPUT x
+3.14
+43
+PRINT x
+QUIT
+
+Demo output:
+ ? INVALID NUMBER
+ ? 43
+
+Your output:
+
+Trace "./trace/trace63.txt" ... Error: x is undefined
+Fail
+Trace file:
+INPUT x
+0xFF
+193
+PRINT x
+QUIT
+
+Demo output:
+ ? INVALID NUMBER
+ ? 193
+
+Your output:
+
+Trace "./trace/trace64.txt" ... Error: x is undefined
+Error: x is undefined
+Fail
+Trace file:
+INPUT x
+000
+PRINT x
+QUIT
+
+Demo output:
+ ? 0
+
+Your output:
+
+Trace "./trace/trace65.txt" ... Error: x is undefined
+Fail
+Trace file:
+INPUT x
+3
+INPUT x
+4
+PRINT x
+QUIT
+
+Demo output:
+ ?  ? 4
+
+Your output:
+
+Trace "./trace/trace66.txt" ... Fail
+Trace file:
+LET x = 100
+INPUT x
+200
+PRINT x
+QUIT
+
+Demo output:
+ ? 200
+
+Your output:
+100
+
+Trace "./trace/trace67.txt" ... Fail
+Trace file:
+LET x = 3
+CLEAR
+PRINT x
+QUIT
+
+Demo output:
+VARIABLE NOT DEFINED
+
+Your output:
+3
+
+Trace "./trace/trace68.txt" ... Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10 REM test line 1
+LIST
+RUN
+QUIT
+
+Demo output:
+10 REM test line 1
+
+Your output:
+
+Trace "./trace/trace69.txt" ... Error: parseExp: Found extra token: 1
+Fail
+Trace file:
+10 PRINT 1
+RUN
+QUIT
+
+Demo output:
+1
+
+Your output:
+
+Trace "./trace/trace70.txt" ... Error: parseExp: Found extra token: 1
+Fail
+Trace file:
+10 PRINT 1
+RUN
+5 PRINT 2
+RUN
+QUIT
+
+Demo output:
+1
+2
+1
+
+Your output:
+
+Trace "./trace/trace71.txt" ... Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: 2
+Error: parseExp: Found extra token: 3
+Error: parseExp: Found extra token: 4
+Error: parseExp: Found extra token: test
+Fail
+Trace file:
+10 PRINT 1
+20 REM test line 1
+15 PRINT 2
+12 PRINT 3
+20 PRINT 4
+10 REM test line 2
+RUN
+QUIT
+
+Demo output:
+3
+2
+4
+
+Your output:
+
+Trace "./trace/trace72.txt" ... Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Fail
+Trace file:
+10 LET x = 10
+20 LET x = 20
+15 PRINT x
+RUN
+QUIT
+
+Demo output:
+10
+
+Your output:
+
+Trace "./trace/trace73.txt" ... Error: parseExp: Found extra token: x
+Fail
+Trace file:
+10 PRINT x
+RUN
+LET x = 3
+RUN
+QUIT
+
+Demo output:
+VARIABLE NOT DEFINED
+3
+
+Your output:
+
+Trace "./trace/trace74.txt" ... Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Fail
+Trace file:
+10 LET x = 1
+LET x = 2
+15 PRINT x
+PRINT x
+RUN
+PRINT x
+QUIT
+
+Demo output:
+2
+1
+1
+
+Your output:
+2
+
+Trace "./trace/trace75.txt" ... Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 2
+Fail
+Trace file:
+10 PRINT 1
+20 PRINT 2
+15 END
+RUN
+QUIT
+
+Demo output:
+1
+
+Your output:
+
+Trace "./trace/trace76.txt" ... Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Fail
+Trace file:
+10 INPUT x
+20 PRINT x
+RUN
+3
+QUIT
+
+Demo output:
+ ? 3
+
+Your output:
+
+Trace "./trace/trace77.txt" ... Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Fail
+Trace file:
+10 INPUT x
+20 INPUT x
+30 PRINT x
+15 PRINT x
+RUN
+111
+222
+QUIT
+
+Demo output:
+ ? 111
+ ? 222
+
+Your output:
+
+Trace "./trace/trace78.txt" ... Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: 30
+Fail
+Trace file:
+10 LET x = 1
+20 LET x = 2
+30 PRINT x
+15 GOTO 30
+RUN
+QUIT
+
+Demo output:
+1
+
+Your output:
+
+Trace "./trace/trace79.txt" ... Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 30
+Fail
+Trace file:
+10 PRINT 1
+20 GOTO 30
+RUN
+QUIT
+
+Demo output:
+1
+LINE NUMBER ERROR
+
+Your output:
+
+Trace "./trace/trace80.txt" ... Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 10
+Fail
+Trace file:
+20 PRINT 1
+30 GOTO 10
+RUN
+QUIT
+
+Demo output:
+1
+LINE NUMBER ERROR
+
+Your output:
+
+Trace "./trace/trace81.txt" ... Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 2
+Fail
+Trace file:
+10 IF 1 + 1 = 2 THEN 30
+20 PRINT 1
+30 PRINT 2
+RUN
+QUIT
+
+Demo output:
+2
+
+Your output:
+
+Trace "./trace/trace82.txt" ... Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 2
+Fail
+Trace file:
+10 IF 1 + 1 = 1 THEN 30
+20 PRINT 1
+30 PRINT 2
+RUN
+QUIT
+
+Demo output:
+1
+2
+
+Your output:
+
+Trace "./trace/trace83.txt" ... Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 2
+Fail
+Trace file:
+10 IF 1 + 1 > 1 THEN 30
+20 PRINT 1
+30 PRINT 2
+RUN
+QUIT
+
+Demo output:
+2
+
+Your output:
+
+Trace "./trace/trace84.txt" ... Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 2
+Fail
+Trace file:
+10 IF 1 + 1 > 2 THEN 30
+20 PRINT 1
+30 PRINT 2
+RUN
+QUIT
+
+Demo output:
+1
+2
+
+Your output:
+
+Trace "./trace/trace85.txt" ... Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 2
+Fail
+Trace file:
+10 IF 1 + 1 < 2 THEN 30
+20 PRINT 1
+30 PRINT 2
+RUN
+QUIT
+
+Demo output:
+1
+2
+
+Your output:
+
+Trace "./trace/trace86.txt" ... Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 2
+Fail
+Trace file:
+10 IF 1 + 1 < 3 THEN 30
+20 PRINT 1
+30 PRINT 2
+RUN
+QUIT
+
+Demo output:
+2
+
+Your output:
+
+Trace "./trace/trace87.txt" ... Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: 40
+Fail
+Trace file:
+10 LET x = 1
+20 IF x = 1 THEN 40
+30 PRINT x
+40 PRINT 40
+RUN
+QUIT
+
+Demo output:
+40
+
+Your output:
+
+Trace "./trace/trace88.txt" ... Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: 30
+Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: 2
+Fail
+Trace file:
+10 PRINT 1
+20 GOTO 30
+30 REM test line 1
+40 PRINT 2
+25 END
+RUN
+QUIT
+
+Demo output:
+1
+2
+
+Your output:
+
+Trace "./trace/trace89.txt" ... Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: 10
+Error: parseExp: Found extra token: x
+Fail
+Trace file:
+10 INPUT x
+20 IF x > 100 THEN 40
+30 GOTO 10
+40 PRINT x
+RUN
+10
+100
+200
+QUIT
+
+Demo output:
+ ?  ?  ? 200
+
+Your output:
+
+Trace "./trace/trace90.txt" ... Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: y
+Error: parseExp: Found extra token: 120
+Error: parseExp: Found extra token: 60
+Error: parseExp: Found extra token: 90
+Error: parseExp: Found extra token: 50
+Error: parseExp: Found extra token: 110
+Error: parseExp: Found extra token: 40
+Error: parseExp: Found extra token: 70
+Error: parseExp: Found extra token: 130
+Error: parseExp: Found extra token: 100
+Error: parseExp: Found extra token: 80
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: y
+Fail
+Trace file:
+10 INPUT x
+20 INPUT y
+30 GOTO 120
+40 GOTO 60
+50 GOTO 90
+60 GOTO 50
+70 GOTO 110
+80 GOTO 40
+90 GOTO 70
+100 GOTO 130
+110 GOTO 100
+120 GOTO 80
+130 PRINT x
+140 PRINT y
+RUN
+10
+20
+QUIT
+
+Demo output:
+ ?  ? 10
+20
+
+Your output:
+
+Trace "./trace/trace91.txt" ... Error: parseExp: Found extra token: calc
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: t
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: t
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: 40
+Error: parseExp: Found extra token: t
+Fail
+Trace file:
+10 REM calc x!
+20 INPUT x
+30 LET t = 1
+40 IF x = 0 THEN 80
+50 LET t = t * x
+60 LET x = x - 1
+70 GOTO 40
+80 PRINT t
+90 END
+RUN
+4
+RUN
+6
+QUIT
+
+Demo output:
+ ? 24
+ ? 720
+
+Your output:
+
+Trace "./trace/trace92.txt" ... Error: parseExp: Found extra token: a
+Error: parseExp: Found extra token: a
+Error: parseExp: Found extra token: b
+Error: parseExp: Found extra token: c
+Error: parseExp: Found extra token: d
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: y
+Error: parseExp: Found extra token: p
+Error: parseExp: Found extra token: q
+Error: parseExp: Found extra token: p
+Error: parseExp: Found extra token: t
+Error: parseExp: Found extra token: q
+Error: parseExp: Found extra token: p
+Error: parseExp: Found extra token: 100
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: y
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: y
+Error: END is undefined
+Fail
+Trace file:
+10 REM a / b + c / d
+20 INPUT a
+30 INPUT b
+40 INPUT c
+50 INPUT d
+60 LET x = a * d + b * c
+70 LET y = b * d
+80 LET p = x
+90 LET q = y
+100 IF p = 0 THEN 150
+110 LET t = q - q / p * p
+120 LET q = p
+130 LET p = t
+140 GOTO 100
+150 LET x = x / q
+160 LET y = y / q
+170 PRINT x
+180 PRINT y
+190 END
+RUN
+1
+6
+3
+4
+RUN
+1
+3
+4
+6
+QUIT
+
+Demo output:
+ ?  ?  ?  ? 11
+12
+ ?  ?  ?  ? 1
+1
+
+Your output:
+
+Trace "./trace/trace93.txt" ... Error: parseExp: Found extra token: get
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: max
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: max
+Error: parseExp: Found extra token: 40
+Error: parseExp: Found extra token: max
+Fail
+Trace file:
+10 REM get Max value
+20 INPUT x
+30 LET max = x
+40 IF x = 0 THEN 90
+50 INPUT x
+60 IF x < max THEN 40
+70 LET max = x
+80 GOTO 40
+90 PRINT max
+RUN
+3
+100
+20
+120
+0
+QUIT
+
+Demo output:
+ ?  ?  ?  ?  ? 120
+
+Your output:
+
+Trace "./trace/trace94.txt" ... Error: parseExp: Found extra token: is
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: i
+Error: parseExp: Found extra token: i
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: i
+Error: parseExp: Found extra token: 40
+Error: parseExp: Found extra token: 0
+Fail
+Trace file:
+10 REM is prime
+20 INPUT x
+30 LET i = 2
+40 IF i * i > x THEN 100
+50 IF x / i * i = x THEN 80
+60 LET i = i + 1
+70 GOTO 40
+80 PRINT 0
+90 END
+100 PRINT 1
+110 END
+RUN
+11
+RUN
+111
+RUN
+97
+RUN
+847
+QUIT
+
+Demo output:
+ ? 1
+ ? 0
+ ? 1
+ ? 0
+
+Your output:
+
+Trace "./trace/trace95.txt" ... Error: parseExp: Found extra token: reverse
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: y
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: y
+Error: parseExp: Found extra token: z
+Error: parseExp: Found extra token: y
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: 40
+Error: parseExp: Found extra token: y
+Error: END is undefined
+Fail
+Trace file:
+10 REM reverse
+20 INPUT x
+30 LET y = 0
+40 IF x = 0 THEN 100
+50 LET y = y * 10
+60 LET z = x - x / 10 * 10
+70 LET y = y + z
+80 LET x = x / 10
+90 GOTO 40
+100 PRINT y
+110 END
+RUN
+1024
+RUN
+1000
+QUIT
+
+Demo output:
+ ? 4201
+ ? 1
+
+Your output:
+
+Trace "./trace/trace96.txt" ... Error: parseExp: Found extra token: test
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: 110
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: 90
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: 110
+Error: parseExp: Found extra token: 1
+Error: END is undefined
+Error: parseExp: Found extra token: 0
+Error: END is undefined
+Fail
+Trace file:
+10 REM test leap year ~~
+20 INPUT x
+30 IF x / 4 * 4 = x THEN 50
+40 GOTO 110
+50 IF x / 100 * 100 = x THEN 70
+60 GOTO 90
+70 IF x / 400 * 400 = x THEN 90
+80 GOTO 110
+90 PRINT 1
+100 END
+110 PRINT 0
+120 END
+RUN
+1992
+RUN
+2000
+RUN
+1900
+RUN
+2013
+QUIT
+
+Demo output:
+ ? 1
+ ? 1
+ ? 0
+ ? 0
+
+Your output:
+
+Trace "./trace/trace97.txt" ... Error: parseExp: Found extra token: add
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: x
+Error: parseExp: Found extra token: sum
+Error: parseExp: Found extra token: sum
+Error: parseExp: Found extra token: 20
+Error: parseExp: Found extra token: sum
+Fail
+Trace file:
+10 REM add
+20 INPUT x
+30 IF x = 0 THEN 60
+15 LET sum = 0
+40 LET sum = sum + x
+50 GOTO 20
+60 PRINT sum
+70 END
+RUN
+1
+2
+3
+4
+5
+0
+RUN
+0
+QUIT
+
+Demo output:
+ ?  ?  ?  ?  ?  ? 15
+ ? 0
+
+Your output:
+
+Trace "./trace/trace98.txt" ... Error: parseExp: Found extra token: calc
+Error: parseExp: Found extra token: sum
+Error: parseExp: Found extra token: i
+Error: parseExp: Found extra token: sum
+Error: parseExp: Found extra token: i
+Error: parseExp: Found extra token: i
+Error: parseExp: Found extra token: 40
+Error: parseExp: Found extra token: sum
+Fail
+Trace file:
+10 REM calc SUM i = 1, 100, i
+20 LET sum = 0
+30 LET i = 1
+40 LET sum = sum + i
+50 IF i = 100 THEN 80
+60 LET i = i + 1
+70 GOTO 40
+80 PRINT sum
+90 END
+RUN
+QUIT
+
+Demo output:
+5050
+
+Your output:
+
+Trace "./trace/trace99.txt" ... Error: parseExp: Found extra token: print
+Error: parseExp: Found extra token: n
+Error: parseExp: Found extra token: n
+Error: parseExp: Found extra token: n
+Error: parseExp: Found extra token: 1
+Error: parseExp: Found extra token: a
+Error: parseExp: Found extra token: b
+Error: parseExp: Found extra token: n
+Error: parseExp: Found extra token: c
+Error: parseExp: Found extra token: a
+Error: parseExp: Found extra token: b
+Error: parseExp: Found extra token: b
+Error: parseExp: Found extra token: n
+Error: parseExp: Found extra token: 80
+Error: END is undefined
+Fail
+Trace file:
+10 REM print fibnacci
+20 INPUT n
+30 IF n < 1 THEN 20
+40 LET n = n - 1
+50 PRINT 1
+60 LET a = 0
+70 LET b = 1
+80 IF n = 0 THEN 150
+90 LET c = a + b
+100 LET a = b
+110 LET b = c
+120 PRINT b
+130 LET n = n - 1
+140 GOTO 80
+150 END
+RUN
+3
+RUN
+0
+10
+QUIT
+
+Demo output:
+ ? 1
+1
+2
+ ?  ? 1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+
+Your output:
+
+40 / 100 trace(s) passed.
+Final Score: 4.0

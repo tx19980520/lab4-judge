@@ -1,0 +1,5 @@
+INPUT x
+3.14
+43
+PRINT x
+QUIT
